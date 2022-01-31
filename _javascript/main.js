@@ -2,29 +2,29 @@
 var viewWidth = document.querySelector('body').offsetWidth;
 
 // Video
-var tag = document.createElement('script');
+// var tag = document.createElement('script');
 
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+// tag.src = "https://www.youtube.com/iframe_api";
+// var firstScriptTag = document.getElementsByTagName('script')[0];
+// firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-var player;
-function onYouTubeIframeAPIReady() {
-  player = new YT.Player('headerVideo', {
-    width: '100%',
-    height: '100%',
-    videoId: 'U0muqHbaggg',
-    playerVars: { 'autoplay': 1, 'playsinline': 1 },
-    events: {
-      'onReady': onPlayerReady
-    }
-  });
-}
+// var player;
+// function onYouTubeIframeAPIReady() {
+//   player = new YT.Player('headerVideo', {
+//     width: '100%',
+//     height: '100%',
+//     videoId: 'l3Mk1yKmhiI',
+//     playerVars: { 'autoplay': 1, 'playsinline': 1 },
+//     events: {
+//       'onReady': onPlayerReady
+//     }
+//   });
+// }
 
-function onPlayerReady(event) {
-    event.target.mute();
-  event.target.playVideo();
-}
+// function onPlayerReady(event) {
+//     event.target.mute();
+//   event.target.playVideo();
+// }
 
 // Animation slika naslov on scroll
 gsap.from('#anim__print__head',{

@@ -3,34 +3,34 @@
 
 .header {
     align-items: flex-end;
-    background: url('../../assets/images/header_bg@1920.jpg') no-repeat center / cover;
+    background: url('../assets/images/header_bg@1920.jpg') no-repeat center / cover;
     color: white;
     display: flex;
     justify-content: center;
     
     @include for-phone {
-        background: url('../../assets/images/header_bg@360.jpg') no-repeat center / cover;
+        background: url('../assets/images/header_bg@360.jpg') no-repeat center / cover;
         height: 380px;
         justify-content: flex-start;
         padding-left: 20px;
     }
     
     @include for-tablet {
-        background: url('../../assets/images/header_bg@1024.jpg') no-repeat center / cover;
+        background: url('../assets/images/header_bg@1024.jpg') no-repeat center / cover;
         height: 440px;
         justify-content: flex-start;
         padding-left: 15%;
     }
     
     @include for-desktop {
-        background: url('../../assets/images/header_bg@1366.jpg') no-repeat center / cover;
+        background: url('../assets/images/header_bg@1366.jpg') no-repeat center / cover;
         height: 774px;
         justify-content: center;
         padding-left: 0;
     }
     
     @include for-fullhd {
-        background: url('../../assets/images/header_bg@1920.jpg') no-repeat center / cover;
+        background: url('../assets/images/header_bg@1920.jpg') no-repeat center / cover;
         height: 985px;
     }
 }
