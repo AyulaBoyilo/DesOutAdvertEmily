@@ -2,20 +2,17 @@
 var viewWidth = document.querySelector('body').offsetWidth;
 
 // Video
-// 2. This code loads the IFrame Player API code asynchronously.
 var tag = document.createElement('script');
 
 tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-// 3. This function creates an <iframe> (and YouTube player)
-//    after the API code downloads.
 var player;
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('headerVideo', {
     width: '100%',
-    height: '450',
+    height: '100%',
     videoId: 'U0muqHbaggg',
     playerVars: { 'autoplay': 1, 'playsinline': 1 },
     events: {
@@ -24,7 +21,6 @@ function onYouTubeIframeAPIReady() {
   });
 }
 
-// 4. The API will call this function when the video player is ready.
 function onPlayerReady(event) {
     event.target.mute();
   event.target.playVideo();
@@ -104,25 +100,12 @@ gsap.from('#anim__overdressed__head',{
   ease:"elastic.out(1, 0.75)"
 })
 
-gsap.from('#logo__video',{
+gsap.from('#logoVideo',{
   scrollTrigger: {
-      trigger: '#logo__video',
+      trigger: '#logoVideo',
       start: 'top 80%'
   },
   scale: 0,
   duration: 2,
   ease:"elastic.out(1, 0.75)"
 })
-
-
-// Animation naslov on scroll
-// gsap.from('#rendeli',{
-//   scrollTrigger: {
-//       trigger: '#rendeli',
-//       start: 'top 90%'
-//   },
-//   x: viewWidth,
-//   opacity: 0,
-//   duration: 1,
-//   ease:"none"
-// })
