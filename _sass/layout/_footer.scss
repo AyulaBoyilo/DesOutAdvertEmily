@@ -1,0 +1,283 @@
+@use '../utilities' as *;
+@use '../base/typography' as *;
+
+.footer {
+  background-color: white !important;
+  border-top: 4px solid black;
+  margin-top: 120px !important;
+  padding: 75px 0 0 !important;
+
+  @include for-phone {
+    margin: 50px 20px !important;
+    padding: 50px 0 !important;
+  }
+
+  @include for-tablet {
+    margin: 50px 15% !important;
+    padding: 75px 0 !important;
+  }
+
+  @include for-phone {
+    padding: 0 0 20px!important;
+  }
+
+  @include for-desktop {
+    margin: 120px 7% !important;
+    padding: 75px 0 0 !important;
+  }
+
+  @include for-fullhd {
+    margin: 120px auto !important;
+    padding: 75px 0 !important;
+  }
+}
+
+.branding {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    height: auto;
+    width: 142px;
+  }
+
+  a:first-of-type {
+    height: auto;
+    width: 215px;
+  }
+
+  @include for-phone {
+    a {
+      height: auto;
+      width: 80px;
+    }
+
+    a:first-of-type {
+      height: auto;
+      width: 120px;
+    }
+  }
+}
+  
+.container-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h6,
+  a {
+    padding: 10px;
+    font-family: 'Urbanist';
+    font-size: 18px;
+  }
+
+  @include for-tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+
+    .branding {
+      a {
+        height: auto;
+        width: 80px;
+      }
+  
+      a:first-of-type {
+        height: auto;
+        width: 150px;
+      }
+    }
+  }
+
+  @include for-desktop {
+    font-size: 20px;
+    padding: 0 0 80px !important;
+  }
+
+  @include for-phone {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+
+    .branding {
+      display: flex;
+      max-width: 70vw;
+    }
+  }
+
+  @include for-widescreen {
+    flex-direction: row;
+    padding: 80px 0 !important;
+
+    .branding {
+      a {
+        height: auto;
+        width: 150px;
+      }
+  
+      a:first-of-type {
+        height: auto;
+        width: 200px;
+      }
+    }
+  }
+
+  @include for-fullhd {
+    padding: 120px !important;
+  }
+
+  @media screen and (min-width: 1500px) {
+    flex-direction: row;
+
+    .branding {
+      display: flex;
+      max-width: 70vw;
+
+      a {
+        height: auto;
+        width: 142px;
+      }
+
+      a:first-of-type {
+        height: auto;
+        width: 215px;
+      }
+    }
+  }
+}
+
+.tim__wrapper {
+  margin-bottom: 124px;
+
+  @include for-phone {
+    margin-top: 50px;
+  }
+}
+
+.tim__heading__wrapper {
+  display: flex;
+  height: 172px;
+  overflow: visible;
+  position: relative;
+}
+
+.tim__heading__wrapper__detalji {
+  height: 750px;
+}
+
+.tim__heading {
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  font-family: $family-secondary;
+  line-height: 1.2;
+  
+  @include for-phone {
+    font-size: 18px;
+    height: 35px;
+    width: 70px;
+  }
+
+  @include for-tablet {
+    font-size: 25px;
+    height: 110px;
+    width: 190px;
+  }
+
+  @include for-desktop {
+    font-size: 40px;
+    height: 127px;
+    width: 267px;
+  }
+
+  @include for-widescreen {
+    font-size: 40px;
+    height: 127px;
+    width: 267px;
+  }
+  
+  @include for-fullhd {
+    font-size: 55px;
+    height: 172px;
+    width: 358px;
+  }
+
+  h3 {
+    background-color: black;
+    left: 30px;
+    position: absolute;
+    top: 30px;
+    text-align: left;
+    
+    @include for-phone {
+      left: 7px;
+      top: 7px;
+      bottom: initial;
+      padding: 0 10px;
+      width: 72px;
+    }
+
+    @include for-tablet {
+      bottom: initial;
+      padding: 10px;
+      width: 195px;
+    }
+
+    @include for-desktop {
+      bottom: initial;
+      padding: 10px;
+      width: 270px;
+    }
+
+    @include for-widescreen {
+      bottom: initial;
+      padding: 10px;
+      width: 270px;
+    }
+    
+    @include for-fullhd {
+      bottom: 30px;
+      padding: 20px;
+      width: 362px;
+    }
+  }
+}
+  
+  
+.tim__text {
+  color: black;
+  font-family: $family-primary;
+  text-align: left;
+  flex: 1;
+  
+  @include for-phone{
+    font-size: 16px;
+    padding: 0 0 0 25px;
+  }
+
+  @include for-tablet{
+    font-size: 16px;
+    padding: 0 50px 0 75px;
+  }
+
+  @include for-desktop{
+    font-size: 16px;
+    padding: 0 150px 0 150px;
+  }
+
+  @include for-widescreen{
+    font-size: 20px;
+    padding: 0 150px 0 150px;
+  }
+  
+  @include for-fullhd {
+    font-size: 20px;
+    padding-left: 200px;
+  }
+}

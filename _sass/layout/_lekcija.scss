@@ -1,0 +1,395 @@
+@use '../utilities/' as *;
+@use '../base/' as *;
+
+.intro__wrapper {
+  @include for-tablet {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.intro {
+  background-color: transparentize($color: $gray-1, $amount: .6);
+  color: black;
+  font-family: $family-primary;
+  text-align: center;
+  
+  @include for-phone {
+    font-size: 14px;
+    margin: 25px 0;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  @include for-tablet {
+    font-size: 14px;
+    margin: 35px 0; 
+    padding: 34px 16px 20px;
+    width: 70%;
+  }
+  
+  @include for-desktop {
+    font-size: 16px;
+    margin: 35px 0; 
+    padding: 34px 16px 20px;
+    width: auto;
+  }
+  
+  @include for-fullhd {
+    font-size: 18px;
+    margin: 125px 0; 
+    padding: 41px 138px 28px;
+  }
+
+  .break {
+    display: inline-block;
+    margin-top: 20px;
+  }
+}
+
+.lekcija {
+  width: 100vw;
+
+  picture {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.picture__wrapper {
+  
+  @include for-phone {
+    margin-bottom: 16px;
+  }
+
+  @include for-tablet {
+    margin-bottom: 30px;
+  }
+
+  @include for-desktop {
+    margin-bottom: 40px;
+  }
+
+  @include for-widescreen {
+    margin-bottom: 40px;
+  }
+
+  @include for-fullhd {
+    margin-bottom: 75px;
+  }
+}
+
+.lekcija__heading__wrapper {
+  overflow: visible;
+  position: relative;
+  
+  @include for-phone {
+    height: auto;
+    padding: 0 0 20px 20px;
+  }
+
+  @include for-tablet {
+    height: 270px;
+    padding-left: 15%;
+  }
+
+  @include for-desktop {
+    height: 250px;
+    padding-left: 0;
+  }
+
+  @include for-widescreen {
+    height: 285px;
+  }
+
+  @include for-fullhd {
+    height: 400px;
+  }
+}
+
+.lekcija__heading__wrapper__detalji {
+  @include for-tablet {
+    height: 440px;
+  }
+
+  @include for-widescreen {
+    height: 500px;
+  }
+
+  @include for-fullhd {
+    height: 750px;
+  }
+}
+
+.lekcija__heading {
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  font-family: $family-secondary;
+  line-height: 1.2;
+  position: absolute;
+  width: 358px;
+  
+  @include for-phone {
+    font-size: 16px;
+    height: 210px;
+    top: -100px;
+    width: 70px;
+  }
+
+  @include for-tablet {
+    font-size: 30px;
+    height: 540px;
+    top: -325px;
+    width: 190px;
+  }
+
+  @include for-desktop {
+    font-size: 30px;
+    height: 540px;
+    top: -325px;
+    width: 190px;
+  }
+
+  @include for-widescreen {
+    font-size: 54px;
+    height: 732px;
+    top: -500px;
+    width: 267px;
+  }
+  
+  @include for-fullhd {
+    font-size: 75px;
+    height: 1009px;
+    top: -650px;
+    width: 358px;
+  }
+
+  h3 {
+    bottom: 30px;
+    background-color: black;
+    flex: 1;
+    position: absolute;
+    top: 30px;
+    
+    @include for-phone {
+      top: 10px;
+      bottom: 10px;
+      left: 10px;
+      padding: 5px;
+      width: 72px;
+    }
+
+    @include for-tablet {
+      left: 20px;
+      padding: 10px;
+      width: 200px;
+    }
+
+    @include for-desktop {
+      left: 20px;
+      padding: 10px;
+      width: 200px;
+    }
+    
+    @include for-widescreen {
+      left: 30px;
+      padding: 20px;
+      width: 270px;
+    }
+    
+    @include for-fullhd {
+      left: 30px;
+      padding: 20px;
+      width: 362px;
+    }
+  }
+}
+
+.lekcija__heading__detalji {
+  
+  @include for-tablet {
+    top: -135px;
+  }
+
+  @include for-widescreen {
+    top: -280px;
+  }
+
+  @include for-fullhd {
+    top: -320px;
+  }
+}
+
+.lekcija__text {
+  color: black;
+  font-family: $family-primary;
+  width: 60%;
+
+  @include for-phone {
+    font-size: 14px;
+    margin: 20px 0 0 85px;
+    padding-left: 20px;
+    width: 70%;
+  }
+
+  @include for-tablet {
+    font-size: 16px;
+    margin: 25px 0 0 145px;
+    padding-left: 15%;
+  }
+
+  @include for-desktop {
+    font-size: 16px;
+    margin: 25px 0 0 255px;
+    padding-left: 0;
+  }
+
+  @include for-widescreen {
+    font-size: 18px;
+    margin: 63px 0 0 380px;
+  }
+
+  @include for-fullhd {
+    font-size: 20px;
+    margin: 76px 0 0 423px;
+  }
+}
+
+.lekcija__opis {
+  color: $gray-2;
+  font-family: $family-primary;
+
+  @include for-phone {
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 0 20px;
+  }
+
+  @include for-tablet {
+    font-size: 14px;
+    line-height: 1.7;
+    padding: 0 15%;
+  }
+
+  @include for-desktop {
+    font-size: 14px;
+    line-height: 1.7;
+    padding-left: 0;
+  }
+  
+  @include for-widescreen {
+    font-size: 18px;
+    line-height: initial;
+  }
+  
+  @include for-fullhd {
+    font-size: 20px;
+    line-height: initial;
+  }
+}
+
+.lekcija__opis__margin {
+  margin-top: 30px;
+}
+
+.lekcija__opis__blue {
+  color: $azul;
+  text-decoration: underline;
+}
+
+.lekcija__head {
+  align-items: center;
+  color: white;
+  display: flex;
+  font-family: $family-secondary;
+  justify-content: center;
+  width: 100vw;
+  
+  @include for-phone {
+    font-size: 20px;
+    height: 114px;
+    margin: 30px 0 20px;
+  }
+
+  @include for-tablet {
+    font-size: 50px;
+    height: 237px;
+    margin: 40px 0 30px;
+  }
+
+  @include for-desktop {
+    font-size: 70px;
+    height: 316px;
+    margin: 50px 0 40px;
+  }
+
+  @include for-widescreen {
+    font-size: 100px;
+    height: 423px;
+    margin: 80px 0 40px;
+  }
+  
+  @include for-fullhd {
+    font-size: 200px;
+    height: 594px;
+    margin: 150px 0 75px;
+  }
+}
+
+.lekcija__head__traper {
+  @include for-phone {
+    background: url('../../assets/images/Designer-Outlet-lekcija-odvazni-traper@768.jpg') no-repeat center / cover;
+  }
+
+  @include for-tablet {
+    background: url('../../assets/images/Designer-Outlet-lekcija-odvazni-traper@1024.jpg') no-repeat center / cover;
+  }
+
+  @include for-desktop {
+    background: url('../../assets/images/Designer-Outlet-lekcija-odvazni-traper@1366.jpg') no-repeat center / cover;
+  }
+
+  @include for-fullhd {
+    background: url('../../assets/images/Designer-Outlet-lekcija-odvazni-traper@1920.jpg') no-repeat center / cover;
+  }
+}
+
+.lekcija__head__detalji {
+  @include for-phone {
+    background: url('../../assets/images/Designer-Outlet-lekcija-ekstremi-u-detaljima@768.jpg') no-repeat center / cover;
+  }
+
+  @include for-tablet {
+    background: url('../../assets/images/Designer-Outlet-lekcija-ekstremi-u-detaljima@1024.jpg') no-repeat center / cover;
+  }
+
+  @include for-desktop {
+    background: url('../../assets/images/Designer-Outlet-lekcija-ekstremi-u-detaljima@1366.jpg') no-repeat center / cover;
+  }
+
+  @include for-fullhd {
+    background: url('../../assets/images/Designer-Outlet-lekcija-ekstremi-u-detaljima@1920.jpg') no-repeat center / cover;
+  }
+}
+
+.lekcija__head__overdressed {
+  @include for-phone {
+    background: url('../../assets/images/Designer-Outlet-lekcija-overdressed@768.jpg') no-repeat center / cover;
+  }
+
+  @include for-tablet {
+    background: url('../../assets/images/Designer-Outlet-lekcija-overdressed@1024.jpg') no-repeat center / cover;
+  }
+
+  @include for-desktop {
+    background: url('../../assets/images/Designer-Outlet-lekcija-overdressed@1366.jpg') no-repeat center / cover;
+  }
+
+  @include for-fullhd {
+    background: url('../../assets/images/Designer-Outlet-lekcija-overdressed@1920.jpg') no-repeat center / cover;
+  }
+}

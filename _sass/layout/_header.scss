@@ -1,0 +1,133 @@
+@use '../utilities/' as *;
+@use '../base/' as *;
+
+.header {
+    align-items: flex-end;
+    background: url('../../assets/images/header_bg@1920.jpg') no-repeat center / cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    
+    @include for-phone {
+        background: url('../../assets/images/header_bg@360.jpg') no-repeat center / cover;
+        height: 380px;
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+    
+    @include for-tablet {
+        background: url('../../assets/images/header_bg@1024.jpg') no-repeat center / cover;
+        height: 440px;
+        justify-content: flex-start;
+        padding-left: 15%;
+    }
+    
+    @include for-desktop {
+        background: url('../../assets/images/header_bg@1366.jpg') no-repeat center / cover;
+        height: 774px;
+        justify-content: center;
+        padding-left: 0;
+    }
+    
+    @include for-fullhd {
+        background: url('../../assets/images/header_bg@1920.jpg') no-repeat center / cover;
+        height: 985px;
+    }
+}
+
+.header__text {
+    background-color: black;
+    font-family: $family-tertiary;
+    line-height: 1.4;
+    text-align: center;
+    
+
+    h1 {  
+        font-family: $family-secondary;
+        font-weight: 400;
+        
+        @include for-phone {
+            font-size: 20px;
+        }
+
+        @include for-tablet {
+            font-size: 30px;
+        }
+
+        @include for-desktop {
+            font-size: 40px;
+        }
+        
+        @include for-widescreen {
+            font-size: 80px;
+        }
+
+        @include for-fullhd {
+            font-size: 100px;
+        }
+    }
+
+    p {
+        text-align: left;
+
+        @include for-phone {
+            font-size: 14px;
+            line-height: 1.2;
+            text-align: center;
+        }
+    }
+
+    @include for-phone {
+        padding: 16px 20px;
+        width: 80%;
+    }
+
+    @include for-tablet {
+        padding: 16px 20px;
+        width: 420px;
+    }
+
+    @include for-desktop {
+        font-size: 18px;
+        margin-bottom: 35px;
+        padding: 16px 63px 20px;
+        width: 550px;
+    }
+
+    @include for-widescreen {
+        font-size: 22px;
+        margin-bottom: 35px;
+        width: 677px;
+    }
+
+    @include for-fullhd {
+        margin-bottom: 0;
+        font-size: 24px;
+        padding: 56px 122px 75px 122px;
+        width: 950px;
+    }
+}
+
+.text__highlight--purple {
+    color: $fuchsia;
+
+    @include for-phone {
+        font-size: 23px;
+    }
+
+    @include for-tablet {
+        font-size: 23px;
+    }
+
+    @include for-desktop {
+        font-size: 26px;
+    }
+
+    @include for-widescreen {
+        font-size: 30px;
+    }
+
+    @include for-fullhd {
+        font-size: 40px;
+    }
+}
