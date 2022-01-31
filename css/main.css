@@ -934,64 +934,64 @@ body {
 
 @media (max-width: 767px) {
   .lekcija__head__traper {
-    background: url("../../assets/images/Designer-Outlet-lekcija-odvazni-traper@768.jpg") no-repeat center/cover;
+    background: url("../assets/images/Designer-Outlet-lekcija-odvazni-traper@768.jpg") no-repeat center/cover;
   }
 }
 @media (min-width: 768px) {
   .lekcija__head__traper {
-    background: url("../../assets/images/Designer-Outlet-lekcija-odvazni-traper@1024.jpg") no-repeat center/cover;
+    background: url("../assets/images/Designer-Outlet-lekcija-odvazni-traper@1024.jpg") no-repeat center/cover;
   }
 }
 @media (min-width: 1025px) {
   .lekcija__head__traper {
-    background: url("../../assets/images/Designer-Outlet-lekcija-odvazni-traper@1366.jpg") no-repeat center/cover;
+    background: url("../assets/images/Designer-Outlet-lekcija-odvazni-traper@1366.jpg") no-repeat center/cover;
   }
 }
 @media (min-width: 1408px) {
   .lekcija__head__traper {
-    background: url("../../assets/images/Designer-Outlet-lekcija-odvazni-traper@1920.jpg") no-repeat center/cover;
+    background: url("../assets/images/Designer-Outlet-lekcija-odvazni-traper@1920.jpg") no-repeat center/cover;
   }
 }
 
 @media (max-width: 767px) {
   .lekcija__head__detalji {
-    background: url("../../assets/images/Designer-Outlet-lekcija-ekstremi-u-detaljima@768.jpg") no-repeat center/cover;
+    background: url("../assets/images/Designer-Outlet-lekcija-ekstremi-u-detaljima@768.jpg") no-repeat center/cover;
   }
 }
 @media (min-width: 768px) {
   .lekcija__head__detalji {
-    background: url("../../assets/images/Designer-Outlet-lekcija-ekstremi-u-detaljima@1024.jpg") no-repeat center/cover;
+    background: url("../assets/images/Designer-Outlet-lekcija-ekstremi-u-detaljima@1024.jpg") no-repeat center/cover;
   }
 }
 @media (min-width: 1025px) {
   .lekcija__head__detalji {
-    background: url("../../assets/images/Designer-Outlet-lekcija-ekstremi-u-detaljima@1366.jpg") no-repeat center/cover;
+    background: url("../assets/images/Designer-Outlet-lekcija-ekstremi-u-detaljima@1366.jpg") no-repeat center/cover;
   }
 }
 @media (min-width: 1408px) {
   .lekcija__head__detalji {
-    background: url("../../assets/images/Designer-Outlet-lekcija-ekstremi-u-detaljima@1920.jpg") no-repeat center/cover;
+    background: url("../assets/images/Designer-Outlet-lekcija-ekstremi-u-detaljima@1920.jpg") no-repeat center/cover;
   }
 }
 
 @media (max-width: 767px) {
   .lekcija__head__overdressed {
-    background: url("../../assets/images/Designer-Outlet-lekcija-overdressed@768.jpg") no-repeat center/cover;
+    background: url("../assets/images/Designer-Outlet-lekcija-overdressed@768.jpg") no-repeat center/cover;
   }
 }
 @media (min-width: 768px) {
   .lekcija__head__overdressed {
-    background: url("../../assets/images/Designer-Outlet-lekcija-overdressed@1024.jpg") no-repeat center/cover;
+    background: url("../assets/images/Designer-Outlet-lekcija-overdressed@1024.jpg") no-repeat center/cover;
   }
 }
 @media (min-width: 1025px) {
   .lekcija__head__overdressed {
-    background: url("../../assets/images/Designer-Outlet-lekcija-overdressed@1366.jpg") no-repeat center/cover;
+    background: url("../assets/images/Designer-Outlet-lekcija-overdressed@1366.jpg") no-repeat center/cover;
   }
 }
 @media (min-width: 1408px) {
   .lekcija__head__overdressed {
-    background: url("../../assets/images/Designer-Outlet-lekcija-overdressed@1920.jpg") no-repeat center/cover;
+    background: url("../assets/images/Designer-Outlet-lekcija-overdressed@1920.jpg") no-repeat center/cover;
   }
 }
 
